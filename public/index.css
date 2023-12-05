@@ -1,14 +1,82 @@
-#img {
-  display: block;
-  margin: auto;
-  height: 128px;
-  width: 128px;
-  padding: 2rem;
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  min-height: 100vh;
 }
 
-#canvas {
-  display: block;
-  margin: 2rem auto;
-  width: 540px;
-  height: 540px;
+main {
+  max-width: 650px;
+  width: 100%;
+  background-color: #221d1d;
+  padding: 20px;
+  height: 100vh;
+}
+
+#new-task-title {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  border-image: radial-gradient(circle, #d32a2a, #221d1d) 1;
+  padding: 5px;
+  height: 25px;
+  font-size: 16px;
+}
+h1 {
+  text-align: center;
+  font-weight: bolder;
+  color: aquamarine;
+  margin-top: 20px;
+}
+form {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+button {
+  padding: 4px;
+  width: 70px;
+  height: 38px;
+  font-size: large;
+  font-weight: bold;
+}
+#list {
+  margin-top: 20px;
+}
+#list li {
+  margin-top: 10px;
+  padding: 5px;
+  border-bottom: 1px solid rgb(68, 68, 68);
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#list li label {
+  color: rgb(129, 129, 129);
+  display: flex;
+  gap: 10px;
+}
+
+#list li.active label {
+  text-decoration: line-through;
+}
+
+.clearBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  width: 100%;
 }
